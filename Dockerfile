@@ -8,6 +8,7 @@ RUN apk --update --no-cache add python3 \
                              git \
                              build-base \
   && pip3 install git+git://github.com/xmendez/wfuzz.git \
+  && pip3 install shodan \
   && apk del .deps \
   && rm -rf /tmp/* /var/cache/apk/*
 
